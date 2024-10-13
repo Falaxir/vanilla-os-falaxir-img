@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: falaxir-custom-nvidia
+  CUSTOM_IMAGE_NAME: vanilla-os-custom-nvidia
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
