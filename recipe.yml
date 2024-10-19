@@ -42,7 +42,7 @@ stages:
   - name: udev rules for wiiznokes fan-control
     type: shell
     commands:
-      - cd wget https://raw.githubusercontent.com/wiiznokes/fan-control/master/res/linux/60-fan-control.rules
+      - wget https://raw.githubusercontent.com/wiiznokes/fan-control/master/res/linux/60-fan-control.rules
       - mv 60-fan-control.rules /etc/udev/rules.d/
       - udevadm control --reload-rules
       - udevadm trigger
